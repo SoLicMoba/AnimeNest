@@ -1,11 +1,10 @@
-import Layout from "./components/global/Layout";
-import { Routes, Router } from "react-router-dom";
+import RoutesApp from './routes'
 
 const App = () => {
   return (
-    <div>
-      <Layout>Hello World</Layout>
-    </div>
+    <>
+      <RoutesApp></RoutesApp>
+    </>
   );
 };
 
