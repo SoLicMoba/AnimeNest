@@ -1,10 +1,12 @@
 import Layout from "./components/global/Layout";
-import { Routes, Router } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <Layout>Hello World</Layout>
+      <Layout>
+        Hello World
+      </Layout>
     </div>
   );
 };
