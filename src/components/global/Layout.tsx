@@ -1,14 +1,17 @@
-import React from 'react';
+import Header from "./Header";
+import { Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
-
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const Layout = () => {
   return (
-    <div className='text-white'>
-        {/* Header */}
-            <main>{children}</main>
-        {/* Footer */}
-    </div>
+    <>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   );
-}
+};
 
 export default Layout;
